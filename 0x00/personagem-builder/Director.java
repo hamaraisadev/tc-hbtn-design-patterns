@@ -9,6 +9,7 @@ public class Director {
         builder.setResistencia(10);
     }
 
+
     public void buildMago(Builder builder) {
         builder.setNome("Mago");
         builder.setTipo(TipoPersonagem.MAGO);

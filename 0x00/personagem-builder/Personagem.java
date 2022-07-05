@@ -11,6 +11,7 @@ public abstract class Personagem {
     private int destreza;
 
 
+
     public Personagem(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         this.nome = nome;
         this.tipo = tipo;

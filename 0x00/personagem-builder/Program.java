@@ -12,6 +12,7 @@ public class Program {
         director.buildLadrao(ladraoBuilder);
 
         try {
+
             Mago mago = magoBuilder.build();
             System.out.println(mago);
         } catch(Exception ex) {

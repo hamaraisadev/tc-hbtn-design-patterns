@@ -28,6 +28,7 @@ public class LadraoBuilder implements Builder {
         this.inteligencia = inteligencia;
     }
 
+
     @Override
     public void setVigor(int vigor) {
         this.vigor = vigor;

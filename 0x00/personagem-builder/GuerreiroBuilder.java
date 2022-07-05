@@ -13,6 +13,7 @@ public class GuerreiroBuilder implements Builder {
         this.nome = nome;
     }
 
+
     @Override
     public void setForca(int forca) {
         this.forca = forca;

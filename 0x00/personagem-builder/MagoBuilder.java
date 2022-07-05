@@ -24,6 +24,7 @@ public class MagoBuilder implements Builder {
         this.tipo = tipo;
     }
 
+
     @Override
     public void setInteligencia(int inteligencia) {
         this.inteligencia = inteligencia;
