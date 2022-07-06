@@ -1,4 +1,4 @@
-public class Program {
+public class Program01 {
     public static void main(String[] args) {
         Director director = new Director();
 
@@ -27,7 +27,7 @@ public class Program {
         }
 
         try {
-            Guerreiro guerreiro = guerreiroBuilder.build();
+            Guerreiro01 guerreiro = guerreiroBuilder.build();
             System.out.println(guerreiro);
         } catch(Exception ex) {
             System.out.println(ex.getMessage());

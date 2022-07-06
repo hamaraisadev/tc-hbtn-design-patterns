@@ -1,18 +1,18 @@
-public class GuerreiroBuilder implements Builder {
+public class MagoBuilder implements Builder {
 
     private String nome;
     private int forca;
-    private TipoPersonagem tipo;
+    private TipoPersonagem01 tipo;
     private int inteligencia;
     private int vigor;
     private int resistencia;
     private int destreza;
 
+
     @Override
     public void setNome(String nome) {
         this.nome = nome;
     }
-
 
     @Override
     public void setForca(int forca) {
@@ -20,9 +20,10 @@ public class GuerreiroBuilder implements Builder {
     }
 
     @Override
-    public void setTipo(TipoPersonagem tipo) {
+    public void setTipo(TipoPersonagem01 tipo) {
         this.tipo = tipo;
     }
+
 
     @Override
     public void setInteligencia(int inteligencia) {
@@ -43,10 +44,8 @@ public class GuerreiroBuilder implements Builder {
     public void setDestreza(int destreza) {
         this.destreza = destreza;
     }
-
-    public Guerreiro build() {
-        return new Guerreiro(nome, inteligencia, forca, vigor, resistencia, destreza);
-
+    public Mago build(){
+        return new Mago(nome,  inteligencia, forca, vigor, resistencia, destreza);
     }
-
 }
+

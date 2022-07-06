@@ -2,7 +2,7 @@ public class LadraoBuilder implements Builder {
 
     private String nome;
     private int forca;
-    private TipoPersonagem tipo;
+    private TipoPersonagem01 tipo;
     private int inteligencia;
     private int vigor;
     private int resistencia;
@@ -19,7 +19,7 @@ public class LadraoBuilder implements Builder {
     }
 
     @Override
-    public void setTipo(TipoPersonagem tipo) {
+    public void setTipo(TipoPersonagem01 tipo) {
         this.tipo = tipo;
     }
 

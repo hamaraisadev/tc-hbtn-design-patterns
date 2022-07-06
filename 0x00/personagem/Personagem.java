@@ -3,7 +3,7 @@ import java.util.Locale;
 public abstract class Personagem {
 
     private String nome;
-    private TipoPersonagem tipo;
+    private TipoPersonagem01 tipo;
     private int inteligencia;
     private int forca;
     private int vigor;
@@ -11,7 +11,7 @@ public abstract class Personagem {
     private int destreza;
 
 
-    public Personagem(String nome, TipoPersonagem tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
+    public Personagem(String nome, TipoPersonagem01 tipo, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         this.nome = nome;
         this.tipo = tipo;
         this.inteligencia = inteligencia;
@@ -29,11 +29,11 @@ public abstract class Personagem {
         this.nome = nome;
     }
 
-    public TipoPersonagem getTipo() {
+    public TipoPersonagem01 getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoPersonagem tipo) {
+    public void setTipo(TipoPersonagem01 tipo) {
         this.tipo = tipo;
     }
 
