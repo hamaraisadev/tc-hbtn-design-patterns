@@ -1,5 +1,6 @@
 package impressao;
 
+import java.util.Locale;
 public class Impressao {
 
     private int paginasTotais;
@@ -95,28 +96,28 @@ public class Impressao {
 
     public double calcularTotal() {
         if (tamanhoImpressao == TamanhoImpressao.A2 && ehFrenteVerso == false){
-            valorPretoBrancoFrenteApenas = 0.32;
-            valorColoridasFrenteApenas = 0.22;
+            valorPretoBrancoFrenteApenas = 0.22;
+            valorColoridasFrenteApenas = 0.32;
             valorTotal =  (paginasBrancoPreto*valorPretoBrancoFrenteApenas) + (paginasColoridas*valorColoridasFrenteApenas);
         }else if(tamanhoImpressao == TamanhoImpressao.A2 && ehFrenteVerso == true){
-            valorPretoBrancoFrenteVerso = 0.28;
-            valorColoridasFrenteVerso = 0.18;
+            valorPretoBrancoFrenteVerso = 0.18;
+            valorColoridasFrenteVerso = 0.28;
             valorTotal = (paginasBrancoPreto*valorPretoBrancoFrenteVerso) + (paginasColoridas*valorColoridasFrenteVerso);
         }else if(tamanhoImpressao == TamanhoImpressao.A3 && ehFrenteVerso == false){
-            valorPretoBrancoFrenteApenas = 0.30;
-            valorColoridasFrenteApenas = 0.20;
+            valorPretoBrancoFrenteApenas = 0.20;
+            valorColoridasFrenteApenas = 0.30;
             valorTotal =  (paginasBrancoPreto*valorPretoBrancoFrenteApenas) + (paginasColoridas*valorColoridasFrenteApenas);
         }else if(tamanhoImpressao == TamanhoImpressao.A3 && ehFrenteVerso == true){
-            valorPretoBrancoFrenteVerso = 0.25;
-            valorColoridasFrenteVerso = 0.15;
+            valorPretoBrancoFrenteVerso = 0.15;
+            valorColoridasFrenteVerso = 0.25;
             valorTotal = (paginasBrancoPreto*valorPretoBrancoFrenteVerso) + (paginasColoridas*valorColoridasFrenteVerso);
         }else if(tamanhoImpressao == TamanhoImpressao.A4 && ehFrenteVerso == false) {
-            valorPretoBrancoFrenteApenas = 0.25;
-            valorColoridasFrenteApenas = 0.15;
+            valorPretoBrancoFrenteApenas = 0.15;
+            valorColoridasFrenteApenas = 0.25;
             valorTotal = (paginasBrancoPreto * valorPretoBrancoFrenteApenas) + (paginasColoridas * valorColoridasFrenteApenas);
         } else if(tamanhoImpressao == TamanhoImpressao.A4 && ehFrenteVerso == true) {
-            valorPretoBrancoFrenteVerso = 0.20;
-            valorColoridasFrenteVerso = 0.10;
+            valorPretoBrancoFrenteVerso = 0.10;
+            valorColoridasFrenteVerso = 0.20;
             valorTotal = (paginasBrancoPreto * valorPretoBrancoFrenteVerso) + (paginasColoridas * valorColoridasFrenteVerso);
         }
         return valorTotal;

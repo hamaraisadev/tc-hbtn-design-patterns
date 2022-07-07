@@ -2,12 +2,11 @@ package impressao;
 
 import java.util.Locale;
 
+import java.util.Locale;
+
 public class Program {
-
     public static void main(String[] args) {
-
-        Locale.setDefault(new Locale("pt", "BR"));
-
+        Locale.setDefault(new Locale("PT", "BR"));
         Impressao impressao1 = ImpressaoFactory.createImpressao(TamanhoImpressao.A3, 50, 10, true);
         Impressao impressao2 = ImpressaoFactory.createImpressao(TamanhoImpressao.A4, 50, 10, true);
         Impressao impressao3 = ImpressaoFactory.createImpressao(TamanhoImpressao.A3, 23, 7, false);
@@ -22,4 +21,5 @@ public class Program {
         System.out.println(impressao5);
         System.out.println(impressao6);
     }
+
 }
