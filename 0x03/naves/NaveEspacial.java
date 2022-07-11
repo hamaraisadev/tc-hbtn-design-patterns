@@ -1,4 +1,4 @@
-package naves;
+
 
 public class NaveEspacial {
 
@@ -19,7 +19,7 @@ public class NaveEspacial {
     }
 
 
-    @Override
+
     public String toString() {
         return String.format("Saude: %d - Ataque: %d", getSaude(),getAtaque());
     }
