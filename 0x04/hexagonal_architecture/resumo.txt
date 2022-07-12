@@ -1,0 +1,17 @@
+O conceito de Arquitetura Hexagonal foi proposto por Alistair Cockburn, em meados dos anos 90, em um artigo postado na primeira wiki
+que foi desenvolvida, chamada WikiWikiWeb (cujos artigos tratavam principalmente de temas relacionados com Engenharia de Software).
+Os objetivos de uma Arquitetura Hexagonal são parecidos com os de uma Arquitetura Limpa, tal como descrevemos em um outro artigo.
+Mas, para reforçar, a ideia é construir sistemas que favorecem reusabilidade de código,
+alta coesão, baixo acoplamento, independência de tecnologia e que são mais fáceis de serem testados.
+Uma Arquitetura Hexagonal divide as classes de um sistema em dois grupos principais:
+
+Classes de domínio, isto é, diretamente relacionadas com o negócio do sistema.
+Classes relacionadas com infraestrutura, tecnologias e responsáveis pela integração com sistemas externos (tais como bancos de dados).
+Hexagonal Architecture, tema apresentado no guia, também conhecido por “ports and adapters architecture”, é um padrão apoiado sobre o uso de camadas,
+e que busca uma outra forma de representar e aplicar na prática as questões de organização, isolamento e dependência entre as camadas. Quando criado,
+teve como motivação os problemas citados no tema Camadas com relação a desorganização no uso de camadas e a infiltração de lógica de negócio em outras camadas.
+Clean architecture, tema apresentado no guia, aborda uma visão que na prática consolida o uso de camadas, inversão de dependências e DDD.
+Assemelha-se à proposta da Hexagonal Architecture, mas segue a linha proposta por outro padrão, o Onion architecture.
+
+Percebo que essa arquitetura nos permite obter o isolamento de cada uma das camadas, nos dá flexibilidade quando fazemos uma alteração na infraestrutura
+ou em um serviço externo, testes fáceis e, o mais importante, nos ajuda a aplicar o SOLID para obter um código mais limpo e sustentável ao longo do tempo.
