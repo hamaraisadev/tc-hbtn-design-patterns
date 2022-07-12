@@ -1,4 +1,4 @@
-package midia_player;
+
 
 public class VideoMediaPlayer implements AdvancedMediaPlayer {
 
@@ -11,6 +11,7 @@ public class VideoMediaPlayer implements AdvancedMediaPlayer {
     @Override
     public void reproduzirMP4(String nomeArquivo) {
         System.out.print("Reproduzindo MP4: " + nomeArquivo);
+
 
     }
 }

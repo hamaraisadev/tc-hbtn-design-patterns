@@ -1,4 +1,4 @@
-package midia_player;
+
 
 public class AudioPlayer implements MediaPlayer{
 
@@ -9,6 +9,7 @@ public class AudioPlayer implements MediaPlayer{
         } else {
             MediaPlayerAdapter mediaPlayerAdapter = new MediaPlayerAdapter();
             mediaPlayerAdapter.reproduzir(tipoMedia, nomeArquivo);
+
         }
     }
 }

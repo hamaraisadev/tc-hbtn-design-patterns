@@ -1,4 +1,4 @@
-package midia_player;
+
 
 public class MediaPlayerAdapter implements MediaPlayer {
 
@@ -25,6 +25,7 @@ public class MediaPlayerAdapter implements MediaPlayer {
         if (tipoMedia == TipoMedia.VLC) {
 
             System.out.print("Reproduzindo " + tipoMedia.name() + ": "  + nomeArquivo);
+
 
         }
 
